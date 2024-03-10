@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: '/mall'
+    encoding:
+      charset: UTF-8
+      enabled: true
+  tomcat:
+    max-swallow-size: 100MB
+
+spring:
+  profiles:
+    active: common,data
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
